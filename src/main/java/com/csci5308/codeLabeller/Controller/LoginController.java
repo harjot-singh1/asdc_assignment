@@ -18,6 +18,15 @@ public class LoginController {
 
     @Autowired
     UserSignUpService userSignUpService;
+<<<<<<< HEAD
+=======
+    /**
+     * This url returns list of pending surveys
+     * It expects annotator's username as payload for call
+     * @param user This is object of UserLoginDetails class
+     * @return AuthResponse this returns jwtToken
+     */
+>>>>>>> c88c7e3e5d5ed1f30e3f6dd8d3733a913ad215a2
     @PostMapping("/login")
     public ResponseEntity<AuthResponse> login(@RequestBody UserLoginDetails user){
         return ResponseEntity.ok(userSignUpService.authenticate(user));

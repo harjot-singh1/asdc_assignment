@@ -25,8 +25,18 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
+<<<<<<< HEAD
 @Service
 public class UserSignUpService {
+=======
+/**
+ * this service helps:
+ * register the user
+ * authenticate the user.
+ */
+@Service
+public class UserSignUpService implements UserSignUpServiceInt {
+>>>>>>> c88c7e3e5d5ed1f30e3f6dd8d3733a913ad215a2
 
     @Autowired
     UserSignUpRepository userSignUpRepository;
@@ -39,6 +49,14 @@ public class UserSignUpService {
     @Autowired
     JwtService jwtService;
 
+<<<<<<< HEAD
+=======
+    /**
+     * this register the user in dbg.
+     * @param user: user information.
+     * @return: this response contians jwt token.
+     */
+>>>>>>> c88c7e3e5d5ed1f30e3f6dd8d3733a913ad215a2
     public AuthResponse registerUser(UserSignUpDetails user){
         GrantedAuthority grantedAuthority = new SimpleGrantedAuthority(user.getAuthority());
         Set<GrantedAuthority> authorities = new HashSet<>();
@@ -56,6 +74,14 @@ public class UserSignUpService {
         return authResponse;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * this helps in authneticating the user.
+     * @param userLoginDetails: DTO for user login details.
+     * @return: this response contians jwt token.
+     */
+>>>>>>> c88c7e3e5d5ed1f30e3f6dd8d3733a913ad215a2
     public AuthResponse authenticate(UserLoginDetails userLoginDetails){
         authManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
