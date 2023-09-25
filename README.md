@@ -1,6 +1,6 @@
-# Code Annotation and CI/CD Pipeline Project
+# Code Labeller
 
-Welcome to the Code Annotation and CI/CD Pipeline Project! This project is designed to allow annotators to add annotations to code snippets in the frontend, which are then reported to administrators. Additionally, we've implemented a Continuous Integration/Continuous Deployment (CI/CD) pipeline to automate code updates on the server whenever changes are committed to the main branch.
+Welcome to the Code Labeller This project is designed to allow annotators to add annotations to code snippets in the frontend, which are then reported to administrators. Additionally, we've implemented a Continuous Integration/Continuous Deployment (CI/CD) pipeline to automate code updates on the server whenever changes are committed to the main branch.
 
 ## Table of Contents
 
