@@ -1,100 +1,101 @@
-# Code Labeller
+### Project Title
+```
+Code Labeller:
 
-Welcome to the Code Labeller This project is designed to allow annotators to add annotations to code snippets in the frontend, which are then reported to administrators. Additionally, we've implemented a Continuous Integration/Continuous Deployment (CI/CD) pipeline to automate code updates on the server whenever changes are committed to the main branch.
+This is an application which can aid a researcher can share code snippets publically whereupon interested personals can annotate code snippets following the annotations provided by said researcher.
+Researcher can visit the uploaded code snippets later and see the annotations completed till that point.
+```
 
-## Table of Contents
+### Goal:
+```
+The goal here is to provide the admin an ability to create surveys, provide the ability to annotator to "mark" or annotate those surveys and then admin can see whatever those annotators have annotated or "mark".
+```
 
-- [Features](#features)
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-    - [Running the Application](#running-the-application)
-- [Usage](#usage)
-- [Testing](#testing)
-- [Contributing](#contributing)
+### Run the code:
+##### Step 1:  Compile
+```shell
+Step 1: Compile
+mvn compile
 
-## Features
+Step 2: 
+mvn build
 
-- Annotators can:
-  - Highlight and annotate code snippets.
-  - Submit annotations.
-- Administrators can:
-  - Add Code Snippets and annotations
-  - Tag annotations to the particular code
-  - View annotation reports and add annotation to the code
-- CI/CD Pipeline:
-  - Automatically updates the server when changes are pushed to the main branch.
+Step 3:
+mvn clean package
 
-## Getting Started
+Step 4:
+mvn install
 
-### Prerequisites
+Step 5:
+java -jar <jar-file-name>.jar
+```
 
-To run this project, you'll need:
+### How To Contribute:
+```bash
+Step 1:
+First step would be to fork the repository.
 
-- Java Development Kit (JDK)
-- Node.js
-- npm (Node Package Manager)
-- Your favorite IDE or code editor
+Step 2:
+Make your changes.
 
-### Installation
+Step 3:
+Test your changes.
 
-1. Clone this repository to your local machine:
+Step 4:
+Make appropriate changes to documentation.
 
-   ```bash
-   git clone https://github.com/harjot-singh1/asdc_assignment.git
-   ```
+Step 5:
+Create a pull request.
+```
 
-2. Navigate to the project directory:
+### Use Cases: Flow:
+```
+The general flow here will demonstrate a complete and most general use case for both annotator and admin:
 
-   ```bash
-   cd backend
-   ```
+Step 1:
+Admin Signs Up:
+Admin chooses a acceptable username and password, also they chooses their role as admin to sign up.
 
-3. Install the Java and React dependencies:
+Step 2:
+Admin starts creating a survey:
+Admin lands on their home page where they can see two options, to see or to create surveys.
+Admin chooses to create survey.
 
-   ```bash
-   # Install Java dependencies (if applicable)
-   # Instructions for Java dependencies go here
+Step 3:
+Admin creates a survey:
+Admin upload snippets( bunch of .java files), chooses language as .java, and upload snippets from their machine.
+Admin adds annotations to the survey and submit and logs out.
 
-   # Install React dependencies
-   cd frontend
-   npm install
-   ```
+Step 4:
+Annotator signs up/log in:
+Annotator lands on their home page where they can see list of surveys created.
+Annotator chooses a survey and start the pagination to start annotating the survey.
 
-### Running the Application
+Step 5:
+Annotator goes through each snippet of the chosen survey:
+Annotator sees one snippet at a time.
+Annotator highlights the code and marks it with an annotation.
+Annotator chooses a tag for the snippet and click on "next" button to move to next snippet.
 
-1. Start the Java backend (instructions for starting the Java application go here).
+Step 6:
+Annotator submits:
+Annotator after annotating all the snippets, submits.
 
-2. Start the React frontend:
-
-   ```bash
-   cd frontend
-   npm start
-   ```
-
-3. Access the application in your web browser at `http://localhost:3000`.
-
-## Usage
-
-1. Annotator Usage:
-    - Log in as an annotator.
-    - Highlight and annotate code snippets.
-    - Submit annotations.
-
-2. Administrator Usage:
-    - Log in as an admin.
-    - View annotation reports.
-
-## Testing
-
-We've included test cases to ensure the reliability of our code. To run the tests, follow these steps:
+Step 7:
+Admin logs in adn see the annotated snippets:
+Admin logs in.
+Admin lands on home page.
+Admin chooses "View Surveys".
+Admin clicks on the desired survey.
+Admin can see the annoated tags for each snippet under that survey.
+Admin can start the pagination for each snippet to see the highlighted part.
+Admin logs out.
+```
 
 
-## Contributing
 
-We welcome contributions! If you'd like to contribute to this project, please follow these guidelines:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature-name` or `git checkout -b bugfix/your-bugfix-name`.
-3. Commit your changes and push to your forked repository.
-4. Create a pull request with a detailed description of your changes.
+### Authors:
+Margin Patel mr353045@dal.ca \
+Aanandi Pankhania an936894@dal.ca \
+Sourav sr734546@dal.ca \
+Harjot Singh hr744527@dal.ca
